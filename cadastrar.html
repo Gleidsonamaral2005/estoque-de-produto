@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Mercadoria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Mercadoria</h2>
+        <form id="mercadoriaForm" action="sucesso.html">
+            <label for="unidade">Unidade</label>
+            <input type="text" id="unidade" name="unidade" required>
+
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+
+            <label for="entrada_quantidade">Entrada Quantidade</label>
+            <input type="number" id="entrada_quantidade" name="entrada_quantidade" required>
+
+            <label for="entrada_valor">Entrada Valor</label>
+            <input type="number" step="0.01" id="entrada_valor" name="entrada_valor" required>
+
+            <label for="saida_quantidade">Saída Quantidade</label>
+            <input type="number" id="saida_quantidade" name="saida_quantidade" required>
+
+            <label for="saida_valor">Saída Valor</label>
+            <input type="number" step="0.01" id="saida_valor" name="saida_valor" required>
+
+            <label for="valor_medio">Valor Médio</label>
+            <input type="number" step="0.01" id="valor_medio" name="valor_medio" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
